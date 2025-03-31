@@ -1,0 +1,162 @@
+Algoritmo sin_titulo
+	Definir v1, v2, v3, v4 Como Real
+    Definir menor, medio1, medio2, mayor Como Real
+    Definir suma, promedio Como Real
+    
+    // Entrada de datos
+    Escribir "Ingrese las ventas de los 4 vendedores:"
+    Leer v1, v2, v3, v4
+    
+    // Ordenar de menor a mayor usando condiciones
+    Si v1 < v2 Y v1 < v3 Y v1 < v4 Entonces
+        menor <- v1
+		finsi 
+        Si v2 < v3 Y v2 < v4 Entonces
+            medio1 <- v2
+            Si v3 < v4 Entonces
+                medio2 <- v3
+                mayor <- v4
+            Sino
+                medio2 <- v4
+                mayor <- v3
+            FinSi
+        Sino Si v3 < v2 Y v3 < v4 Entonces
+				medio1 <- v3
+			FinSi
+			
+				Si v2 < v4 Entonces
+					medio2 <- v2
+					mayor <- v4
+				Sino
+					medio2 <- v4
+					mayor <- v2
+				FinSi
+			
+				medio1 <- v4
+				Si v2 < v3 Entonces
+					medio2 <- v2
+					mayor <- v3
+				Sino
+					medio2 <- v3
+					mayor <- v2
+				FinSi
+			FinSi
+		
+			Si v2 < v1 Y v2 < v3 Y v2 < v4 Entonces
+				menor <- v2
+				finsi 
+				Si v1 < v3 Y v1 < v4 Entonces
+					medio1 <- v1
+					Si v3 < v4 Entonces
+						medio2 <- v3
+						mayor <- v4
+					Sino
+						medio2 <- v4
+						mayor <- v3
+					FinSi
+				Sino Si v3 < v1 Y v3 < v4 Entonces
+						medio1 <- v3
+						finsi
+						Si v1 < v4 Entonces
+							medio2 <- v1
+							mayor <- v4
+						Sino
+							medio2 <- v4
+							mayor <- v1
+						FinSi
+					
+						medio1 <- v4
+						Si v1 < v3 Entonces
+							medio2 <- v1
+							mayor <- v3
+						Sino
+							medio2 <- v3
+							mayor <- v1
+						FinSi
+					FinSi
+				
+					Si v3 < v1 Y v3 < v2 Y v3 < v4 Entonces
+						menor <- v3
+					FinSi
+					
+						Si v1 < v2 Y v1 < v4 Entonces
+							medio1 <- v1
+							Si v2 < v4 Entonces
+								medio2 <- v2
+								mayor <- v4
+							Sino
+								medio2 <- v4
+								mayor <- v2
+							FinSi
+						Sino 
+							Si v2 < v1 Y v2 < v4 Entonces
+								medio1 <- v2
+							FinSi
+							
+								Si v1 < v4 Entonces
+									medio2 <- v1
+									mayor <- v4
+								Sino
+									medio2 <- v4
+									mayor <- v1
+								FinSi
+							
+								medio1 <- v4
+								Si v1 < v2 Entonces
+									medio2 <- v1
+									mayor <- v2
+								Sino
+									medio2 <- v2
+									mayor <- v1
+								FinSi
+							FinSi
+				
+							menor <- v4
+							Si v1 < v2 Y v1 < v3 Entonces
+								medio1 <- v1
+								Si v2 < v3 Entonces
+									medio2 <- v2
+									mayor <- v3
+								Sino
+									medio2 <- v3
+									mayor <- v2
+								FinSi
+							Sino Si v2 < v1 Y v2 < v3 Entonces
+									medio1 <- v2
+									Si v1 < v3 Entonces
+										medio2 <- v1
+										mayor <- v3
+									Sino
+										medio2 <- v3
+										mayor <- v1
+									FinSi
+								Sino
+									medio1 <- v3
+									Si v1 < v2 Entonces
+										medio2 <- v1
+										mayor <- v2
+									Sino
+										medio2 <- v2
+										mayor <- v1
+									FinSi
+								FinSi
+							FinSi
+							
+							// Mostrar ventas ordenadas
+							Escribir "Ventas ordenadas de menor a mayor: ", menor, ", ", medio1, ", ", medio2, ", ", mayor
+							
+							// Calcular diferencias
+							Escribir "Diferencia entre el mayor y el menor: ", mayor - menor
+							Escribir "Diferencia entre el segundo y el menor: ", medio1 - menor
+							Escribir "Diferencia entre el mayor y el tercero: ", mayor - medio2
+							Escribir "Diferencia entre el tercero y el segundo: ", medio2 - medio1
+							
+							// Calcular suma y promedio
+							suma <- menor + medio1 + medio2 + mayor
+							promedio <- suma / 4
+							Escribir "Suma total de las ventas: ", suma
+							Escribir "Promedio general de ventas: ", promedio
+
+
+	
+FinAlgoritmo
