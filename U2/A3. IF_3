@@ -1,0 +1,30 @@
+Algoritmo sin_titulo
+	Definir edad, años_trabajados, ingreso Como Real
+    Definir credito Como Cadena
+	
+    // Solicitar datos al usuario
+    Escribir "Ingrese la edad del prospecto: "
+    Leer edad
+    Escribir "Ingrese los años trabajados: "
+    Leer años_trabajados
+    Escribir "Ingrese el ingreso actual: "
+    Leer ingreso
+	
+    // Inicializar el crédito como "sin asignar"
+    credito <- "Necesita contactar a un asesor."
+	
+    // Evaluar las condiciones en orden
+    Si edad > 18 Y años_trabajados > 5 Y ingreso > 5000 Entonces
+        credito <- "El rango de crédito será de $10,000 a $15,000."
+    FinSi
+	
+    Si edad > 35 Y años_trabajados > 10 Y ingreso > 10000 Entonces
+        credito <- "El rango de crédito será de $25,000 a $30,000."
+    FinSi
+	
+    Si edad > 60 Y años_trabajados > 20 Y ingreso > 20000 Entonces
+        credito <- "El rango de crédito será de $50,000 a $100,000."
+    FinSi
+	// Mostrar el resultado final
+    Escribir credito
+FinAlgoritmo
