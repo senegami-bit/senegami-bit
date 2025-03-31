@@ -15,3 +15,4 @@ En fundamentos de programacion es la introduccion en el procedimiento a programa
 Unidad 1 
 
 en esta unidad nos introduce a los conceptos fundamentales de lo que son los algoritmos ya que son un procedimiento paso a paso diseñado para resolver problemas 
+[UNIDAD 3](https://github.com/senegami-bit/senegami-bit/tree/main/U3) 
