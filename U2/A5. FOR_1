@@ -1,0 +1,46 @@
+Algoritmo CalcularPromedio
+   
+    Definir nombreAlumno Como Cadena
+    Definir numMaterias, i Como Entero
+    Definir calificacion, sumaCalificaciones, promedio Como Real
+    
+   
+    Escribir "Ingrese el nombre del alumno:"
+    Leer nombreAlumno
+    
+    
+    Escribir "Ingrese el número de materias a calificar:"
+    Leer numMaterias
+    
+    
+    sumaCalificaciones <- 0
+    
+    
+    Para i <- 1 Hasta numMaterias Con Paso 1 Hacer
+        Escribir "Ingrese la calificación de la materia ", i, ":"
+        Leer calificacion
+        
+        
+        Si calificacion = 10 Entonces
+            Escribir "¡Alumno destacado!"
+        FinSi
+        
+        
+        sumaCalificaciones <- sumaCalificaciones + calificacion
+    FinPara
+    
+    
+    promedio <- sumaCalificaciones / numMaterias
+    
+  
+    Escribir "Reporte del alumno:"
+    Escribir "Nombre: ", nombreAlumno
+    Escribir "Promedio final: ", promedio
+    
+   
+    Si promedio > 6 Entonces
+        Escribir "El alumno aprobó."
+    Sino
+        Escribir "El alumno necesita recursamiento."
+    FinSi
+FinAlgoritmo
