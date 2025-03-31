@@ -1,0 +1,26 @@
+SubProceso volumendefigura(ladito)
+    escribir "poneele ahi el numerito ese de lo que mide uno de los lados del cubo wey"
+	leer ladito
+	vol= ladito*ladito*ladito
+	escribir " iri al chile el volumen del cubo me salio asi" , vol
+FinSubProceso
+SubProceso volumenderectangulo(lad)
+	escribir "escribe la longitud del rectangulo"
+	leer L
+	escribir "escribe el ancho del rectangulo" 
+	leer anch
+	escribir " escribe la altura del rectangulo"
+	leer A
+	volrec= L*anch*A 
+FinSubProceso
+SubProceso volumendeuncilindro(ladi)
+	escribir "ponle el area del circulo wey" 
+FinSubProceso
+
+Algoritmo volumenes_X
+
+    Escribir "Ingrese un número:"
+    Leer x
+    volumendefigura(x)
+FinAlgoritmo
+
