@@ -1,0 +1,59 @@
+Algoritmo llegaronlostopgloblales 
+			
+			Definir numVendedores, numVentas, i, j Como Entero
+			Definir valorVenta, totalVendedor, ventaMaxima, totalGlobal Como Real
+			
+			Escribir "Ingrese el número de vendedores a registrar:"
+			Leer numVendedores
+			
+			
+			totalGlobal <- 0
+			
+			
+			Para i <- 1 Hasta numVendedores Hacer
+				Escribir "Ingrese el número de ventas realizadas por el vendedor ", i, ":"
+				Leer numVentas
+				
+				
+				totalVendedor <- 0
+				ventaMaxima <- 0
+				
+				
+				Para j <- 1 Hasta numVentas Hacer
+					Escribir "Ingrese el valor de la venta ", j, " del vendedor ", i, ":"
+					Leer valorVenta
+					
+					totalVendedor <- totalVendedor + valorVenta
+					
+					Si valorVenta > ventaMaxima Entonces
+						ventaMaxima <- valorVenta
+					FinSi
+				FinPara
+				
+	
+				Escribir "Resumen para el vendedor ", i, ":"
+				Escribir "Total de ventas: $", totalVendedor
+				Escribir "Número de ventas realizadas: ", numVentas
+				Escribir "Venta más alta: $", ventaMaxima
+				
+				
+				Si ventaMaxima < 100 O totalVendedor < 1500 Entonces
+					Escribir "El vendedor ", i, " debe pasar a Recursos Humanos."
+				FinSi
+				
+				
+				totalGlobal <- totalGlobal + totalVendedor
+			FinPara
+			
+			
+			Escribir "Reporte Final:"
+			Escribir "Número total de vendedores registrados: ", numVendedores
+			Escribir "Total de ventas globales de la empresa: $", totalGlobal
+			
+			Si totalGlobal > 20000 Entonces
+				Escribir "¡Se alcanzó la meta!"
+			Sino
+				Escribir "Es necesario convocar una reunión."
+			FinSi
+
+FinAlgoritmo
