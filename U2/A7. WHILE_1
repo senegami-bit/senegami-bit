@@ -1,0 +1,43 @@
+Algoritmo GestionInventarioACME
+    
+ 
+    contrasena <- "Abc123"  
+    
+  
+    accesoPermitido <- Falso
+    Mientras accesoPermitido = Falso Hacer
+        Escribir "Ingrese la contraseña (debe tener 6 caracteres, 3 letras, al menos 1 mayúscula y 3 números no consecutivos):"
+        Leer intentoContrasena
+        
+        
+        Si intentoContrasena = contrasena Entonces
+            accesoPermitido <- Verdadero
+            Escribir "Bienvenido al sistema de gestión de inventario."
+        Sino
+            Escribir "Contraseña incorrecta. Llame al supervisor."
+        FinSi
+    FinMientras
+    
+
+    totalPiezas <- 0
+    entrada <- -1  
+    
+    Mientras entrada <> 0000 Hacer
+        Escribir "Ingrese la cantidad de piezas fabricadas (o 0000 para terminar):"
+        Leer entrada
+        
+        Si entrada <> 0000 Entonces
+            totalPiezas <- totalPiezas + entrada
+        FinSi
+    FinMientras
+    
+    
+    Escribir "Total de piezas fabricadas: ", totalPiezas
+    
+    
+    Si totalPiezas > 10000 Entonces
+        Escribir "¡Meta cumplida! Producción exitosa."
+    Sino
+        Escribir "Alerta para producción: No se ha cumplido la meta."
+    FinSi
+FinAlgoritmo
