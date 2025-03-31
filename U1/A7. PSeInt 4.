@@ -1,0 +1,34 @@
+Algoritmo credito 
+		Definir años_de_edad  Como Entero
+		Definir ingreso_mensual Como Real
+		Definir a_trab Como Real
+		Definir Saldo_actual_en_el_banco como Real
+		definir mot_presta Como Logico
+		Escribir "Ingrese la edad:"
+		Leer edad 
+		
+		Escribir "Ingrese el ingreso mensual:"
+		Leer ing_mensual 
+		
+		Escribir "años trabajando :"
+		Leer A_trab 
+		
+		Escribir "saldo actual en el banco:"
+		Leer sal_act
+		
+		Escribir "¿el prestamo es para cuestiones medicas? (1=si 0=no)"
+		leer mot_presta
+		pre_max = (ing_mensual*.15)*12
+		c1 = años_de_edad > 18    
+		c2 = ingreso_mensual >= 4000 
+		c3 = a_trab >= 2
+		c4 = sal_act <= 10000
+		
+		// Evaluación de descuento
+		cred_apro <- (c1) Y (c2) Y (c3) o c4 o mot_presta
+		
+		Escribir "el solicitante tien" edad "años"
+		Escribir "ingreso mensual es de" ing_mensual
+		Escribir"su monto total es de: " pre_max
+		escribir "su credito" credi_apro 
+FinAlgoritmo
