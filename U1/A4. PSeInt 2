@@ -1,0 +1,15 @@
+Algoritmo AREA_SOMBREADA
+
+Escribir "ingresa Hipotenusa"
+
+Leer H
+
+Escribir "ingresa radio"
+
+Leer R
+
+AC=(R&R)*3.1416/4
+
+A-RAIZ((H*H)-(R&R))
+
+Amc=(((R/2)-(R/
