@@ -1,0 +1,74 @@
+Algoritmo abarroteskamera
+   
+    
+    Escribir "Ingrese la contraseña (formato YYYY-MM-DD):"
+    Leer contraseña
+    Mientras contraseña <> "2006-03-02" Hacer
+        Escribir "Contraseña incorrecta. Intente nuevamente."
+        Escribir "Ingrese la contraseña (formato YYYY-MM-DD):"
+        Leer contraseña
+    FinMientras
+    
+    Escribir "Bienvenido al sistema de la Abarrotera Kamarena"
+    
+	
+    Escribir "¿Desea hacer registros de zanahorias o de tomates? (zanahorias/tomates):"
+    Leer opcion
+    
+    Si opcion = "zanahorias" Entonces
+        Escribir "Ingrese cuántas cajas de zanahorias requiere:"
+        Leer cajas
+        
+        costoTotal <- 0
+        pesoTotal <- 0
+        
+        Para i <- 1 Hasta cajas Hacer
+            Escribir "Ingrese el peso de la caja ", i, " (en kg):"
+            Leer peso
+            costoTotal <- costoTotal + (peso * 15.84)
+            pesoTotal <- pesoTotal + peso
+        FinPara
+        
+    Sino
+        Si opcion = "tomates" Entonces
+			escribir "ingrese cuantas cajas de tomates requiere:"
+			leer cajas 
+            costoTotal <- 0
+            pesoTotal <- 0
+           
+            
+            Para i <- 1 Hasta cajas Hacer
+				Escribir "Ingrese el peso de la caja ", i, " (en kg):"
+				Leer peso
+				costoTotal <- costoTotal + (peso * 11.34)
+				pesoTotal <- pesoTotal + peso
+			FinPara
+        FinSi
+    FinSi
+    
+    Escribir "Opción elegida: ", opcion
+    Escribir "Cajas añadidas: ", cajas
+    Escribir "Peso total: ", pesoTotal, " kg"
+    Escribir "Costo total: $", costoTotal
+    
+	
+    Si costoTotal > 10000 Entonces
+        descuento <- costoTotal * 0.075
+        costoTotal <- costoTotal - descuento
+        Escribir "Se aplicó un descuento del 7.5%: $", descuento
+        Escribir "Costo total con descuento: $", costoTotal
+    FinSi
+    
+	
+    Escribir "¿Requiere envío? (si/no):"
+    Leer requiereEnvio
+    
+    Si requiereEnvio = "si" Entonces
+        costoEnvio <- 150
+        costoTotal <- costoTotal + costoEnvio
+        Escribir "Se añadió un costo de envío de $150."
+        Escribir "Costo total con envío: $", costoTotal
+    Sino
+        Escribir "Costo total sin envío: $", costoTotal
+    FinSi
+FinAlgoritmo
