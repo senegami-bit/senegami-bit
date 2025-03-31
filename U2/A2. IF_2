@@ -1,0 +1,23 @@
+Algoritmo MayorMenor
+    // Definir variables
+    Definir num1, num2, mayor, menor Como Entero
+    
+    // Solicitar al usuario que ingrese los dos números
+    Escribir "Ingrese el primer número:"
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+    
+    // Determinar cuál es el mayor y cuál es el menor
+    Si num1 > num2 Entonces
+        mayor <- num1
+        menor <- num2
+    Sino
+        mayor <- num2
+        menor <- num1
+    FinSi
+    
+    // Mostrar el resultado
+    Escribir "El número mayor es: ", mayor
+    Escribir "El número menor es: ", menor
+FinAlgoritmo
