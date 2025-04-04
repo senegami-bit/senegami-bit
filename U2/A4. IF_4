@@ -1,3 +1,14 @@
+El programador sigue teniendo complicaciones para ajustar su código cuando ingresan valores, pero necesita ayuda, ahora su jefe, que no conoce mucho de programación, quiere un programa para calcular los rendimientos de 4 vendedores y ver la diferencia entre estos.
+
+El programa debe recibir los 4 valores de los vendedores, que se calcula en ventas por mes, después, el programa debe ordenarlos de menor a mayor, siendo 4 el mayor y 1 el menor, una vez hecho esto debe hacer las siguientes operaciones.
+
+Mostrar los números ordenados
+El resultado del 4 menos el 1
+El resultado del 2 menos el 1
+El resultado del 4 menos el 3
+El resultado del 3 menos el 2
+La suma de todas las ventas y el promedio general
+
 Algoritmo sin_titulo
 	Definir v1, v2, v3, v4 Como Real
     Definir menor, medio1, medio2, mayor Como Real
@@ -160,3 +171,18 @@ Algoritmo sin_titulo
 
 	
 FinAlgoritmo
+** Ejecución Iniciada. ***
+Ingrese las ventas de los 4 vendedores:
+> 40004
+> 40004
+> 40004
+>
+Ventas ordenadas de menor a mayor: 0, 40004, 40004, 40004
+Diferencia entre el mayor y el menor: 40004
+Diferencia entre el segundo y el menor: 40004
+Diferencia entre el mayor y el tercero: 0
+Diferencia entre el tercero y el segundo: 0
+Suma total de las ventas: 120012
+Promedio general de ventas: 30003
+*** Ejecución Finalizada. ***
+
