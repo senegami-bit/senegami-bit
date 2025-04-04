@@ -1,3 +1,7 @@
+Un programador tiene problemas para definir si un valor es mayor que otro cuando ingresa 2 números, seguramente no ha leído la documentación, pero para ayudarlo, necesita un programa que al ingresar 2 números, imprima siempre primero el más alto y luego el más bajo.
+
+Si el programador ingresa 11 y 150, la salida deberá mostrar 150 y luego 11. Los números podrán ser ingresados en cualquier orden y siempre deberán indicar cuál es el mayor y cuál es el menor.
+
 Algoritmo MayorMenor
     // Definir variables
     Definir num1, num2, mayor, menor Como Entero
@@ -21,3 +25,13 @@ Algoritmo MayorMenor
     Escribir "El número mayor es: ", mayor
     Escribir "El número menor es: ", menor
 FinAlgoritmo
+*** Ejecución Iniciada. ***
+Ingrese el primer número:
+> 3
+Ingrese el segundo número:
+> 2
+El número mayor es: 3
+El número menor es: 2
+*** Ejecución Finalizada. ***
+
+
