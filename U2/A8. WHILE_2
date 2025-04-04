@@ -1,3 +1,16 @@
+La abarrotera "Kamarena" necesita trabajar en un sistema que le ayude a registrar de manera fácil y rápida todos sus pedidos, hubo una explosión en el mercado al otro lado de la ciudad y ellos han quedado como el único lugar disponible para comprar, esa idea de poner una bomba ha salido terriblemente bien (no hubo ningún herido).
+
+Mientras el dueño sigue luchando entre entregarse a las autoridades por lo sucedido y pedir perdón a las familias involucradas, ha pedido a su asesor externo, el "Teclas" que le ayude con un sistema.
+
+Para ingresar al sistema debe pedir una contraseña (Mientras), que debe ser una fecha de nacimiento en formato YYYY-MM-DD, una vez en el sistema, debe preguntar si (Si) quiere hacer registros de zanahorias o de tomates.
+
+Si elige zanahorias, deberá pedir que se ingresen cuántas cajas deberá ingresar (Para), como cada caja tiene un valor diferente, habrá que ingresarlo manualmente una por una.
+
+Si elige tomates, deberá ingresar cuantas cajas se necesiten y cuando escriba el número 100001 deberá terminar de registrar (Mientras).
+
+En ambos casos, deberá qué opción se eligió y mostrar cuántas cajas se añadieron, cuánto fue el total del peso y cuánto fue el costo total de esa venta, las zanahorias cuestan $15.84 el kilo y los tomates cuestan $11.34 el kilo, si (Si) la venta supera los $10,000, se le hará un descuento automático del 7.5% del valor total.
+
+Finalmente, deberá preguntar si (Si) el cliente necesita o no envío, si requiere envío deberá añadir $150 más a su pedido, de lo contrario, mostrará el precio anterior.
 Algoritmo abarroteskamera
    
     
@@ -72,3 +85,32 @@ Algoritmo abarroteskamera
         Escribir "Costo total sin envío: $", costoTotal
     FinSi
 FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingrese la contraseña (formato YYYY-MM-DD):
+> 2006-03-01
+Contraseña incorrecta. Intente nuevamente.
+Ingrese la contraseña (formato YYYY-MM-DD):
+> 2006-03-02
+Bienvenido al sistema de la Abarrotera Kamarena
+¿Desea hacer registros de zanahorias o de tomates? (zanahorias/tomates):
+> tomates
+ingrese cuantas cajas de tomates requiere:
+> 3
+Ingrese el peso de la caja 1 (en kg):
+> 400
+Ingrese el peso de la caja 2 (en kg):
+> 300
+Ingrese el peso de la caja 3 (en kg):
+> 200
+Opción elegida: tomates
+Cajas añadidas: 3
+Peso total: 900 kg
+Costo total: $10206
+Se aplicó un descuento del 7.5%: $765.45
+Costo total con descuento: $9440.55
+¿Requiere envío? (si/no):
+> si
+Se añadió un costo de envío de $150.
+Costo total con envío: $9590.55
+*** Ejecución Finalizada. ***
